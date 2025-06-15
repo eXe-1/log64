@@ -14,6 +14,7 @@ WriteFile
 WriteConsoleA
 CreateFileA
 GetSystemTime
+ExitProcess
 ```
 All functions are in kernel32 <br>
 
