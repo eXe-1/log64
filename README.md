@@ -44,27 +44,6 @@ extern int logger_trace(char* str);
 ```
 link with logger.obj
 
-## Return values
-
-### init
-3001 created console logger <br>
-3002 created file logger <br>
-Error: program exits with -1111
-
-### setLevel
-3101 updated logger level <br>
-5101 error
-
-### log
-3201 logged to console <br>
-3202 logged to file <br>
-5201 unknown level <br>
-5202 loggerType error (shouldn't be possible) <br>
-5203 level greater than logger level (from setLevel) <br>
-
-### trace ... error
-same as logger_log
-
 ## Example
 
 ```c
