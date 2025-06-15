@@ -1,5 +1,5 @@
 # log64
-Simple minimal Logger written in Assembly Language. <br>
+Simple minimal logger written in assembler. <br>
 
 I'm not a professional programmer. This is just a simple project I made to learn and understand assembly. <br>
 It is neither efficient nor safe. <br>
