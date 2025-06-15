@@ -44,53 +44,25 @@ extern int logger_trace(char* str);
 ```
 link with logger.obj
 
-## Functions
+## Return values
 
 ### init
-```c
-extern int logger_init(int i, char* str);
-```
-i = 1 -> console logger <br>
-i = 2 -> file logger <br>
-str -> filename (gets ignored if i==1)
-if file exists it gets overwritten <br>
-return: <br>
 3001 created console logger <br>
 3002 created file logger <br>
-5001 error 
+Error: program exits with -1111
 
 ### setLevel
-```c
-extern int logger_setLevel(int level);
-```
-level -> logger level <br>
-return: <br>
 3101 updated logger level <br>
 5101 error
 
 ### log
-```c
-extern int logger_log(int level, char* str);
-```
-level -> level of message <br>
-str -> message <br>
-return: <br>
 3201 logged to console <br>
 3202 logged to file <br>
 5201 unknown level <br>
 5202 loggerType error (shouldn't be possible) <br>
 5203 level greater than logger level (from setLevel) <br>
 
-```c
-extern int logger_error(char* str);
-extern int logger_warning(char* str);
-extern int logger_info(char* str);
-extern int logger_debug(char* str);
-extern int logger_trace(char* str);
-```
-str -> message <br>
-calls logger_log with specific level <br>
-return: <br>
+### trace ... error
 same as logger_log
 
 ## Example
