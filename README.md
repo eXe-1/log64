@@ -119,6 +119,9 @@ int main() {
     logger_debug("msg2"); //wont be printed
     logger_log(LEVEL_TRACE, "msg3"); //wont be printed
     logger_log(LEVEL_ERROR, "msg4"); //will be printed
+    logger_init(FILE_LOGGER, "logger1.txt");
+    //from now on message will be printed to the file and no longer to the console
+    logger_warning("msg5"); //this message will be printed in logger1.txt
     return 0;
 }
 ```
