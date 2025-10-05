@@ -18,12 +18,6 @@ ExitProcess
 ```
 All functions are in kernel32 <br>
 
-## Assemble
-Example:
-```
-nasm -f win64 logger.asm
-```
-
 ## C Implementation
 ```c
 #define LEVEL_ERROR 1
